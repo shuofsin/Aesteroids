@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://d26xjt2ne2sto"]
+
+[ext_resource type="Texture2D" uid="uid://codfmqlgv3l7k" path="res://assets/background.png" id="1_6xdbb"]
+[ext_resource type="Script" uid="uid://5qmjubbjpqp" path="res://resources/game.gd" id="1_nqg2l"]
+[ext_resource type="PackedScene" uid="uid://chqctfs45opl6" path="res://resources/ship.tscn" id="1_xyldu"]
+[ext_resource type="PackedScene" uid="uid://bi86ie4yif8ce" path="res://resources/gui.tscn" id="2_d113y"]
+[ext_resource type="PackedScene" uid="uid://byjr06h487ctf" path="res://resources/random_aesteroid_placer.tscn" id="3_nb8ie"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_nqg2l")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 648.0
+offset_bottom = 648.0
+texture = ExtResource("1_6xdbb")
+
+[node name="background" type="TextureRect" parent="background"]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 1.0
+offset_right = 1255.0
+offset_bottom = 649.0
+texture = ExtResource("1_6xdbb")
+
+[node name="GUI" parent="." instance=ExtResource("2_d113y")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Control" parent="GUI" index="1"]
+offset_top = 60.0
+offset_bottom = 100.0
+
+[node name="Panel" parent="GUI" index="2"]
+visible = true
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 161.0
+offset_top = 97.0
+offset_right = 992.0
+offset_bottom = 546.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Ship" parent="." instance=ExtResource("1_xyldu")]
+unique_name_in_owner = true
+position = Vector2(485, 280)
+
+[node name="RandomAesteroidPlacer" parent="." instance=ExtResource("3_nb8ie")]
+
+[editable path="GUI"]

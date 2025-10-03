@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctewwfphk35o5"]
+
+[ext_resource type="Texture2D" uid="uid://c38d4ugc0evsy" path="res://assets/aesteroid.png" id="1_5yydp"]
+[ext_resource type="Script" uid="uid://bxhjymt6gjwts" path="res://resources/aesteroid.gd" id="1_kotc3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kotc3"]
+radius = 15.0
+
+[node name="Aesteroid" type="Area2D"]
+script = ExtResource("1_kotc3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5yydp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_kotc3")

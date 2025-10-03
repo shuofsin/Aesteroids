@@ -1,0 +1,9 @@
+res://resources/gui.tscn
+res://resources/theme.tres
+res://resources/gui.gd
+res://resources/game.gd
+res://resources/game.tscn
+res://resources/aesteroid.tscn
+res://resources/ship.tscn
+res://resources/bullet.tscn
+res://resources/ship.gd

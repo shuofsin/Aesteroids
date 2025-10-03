@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://m4hgpxspbw5h"]
+
+[ext_resource type="FontFile" uid="uid://dq6j0mqioajc6" path="res://assets/MedodicaRegular.otf" id="1_d4nwg"]
+
+[resource]
+Label/colors/font_color = Color(0, 0.728006, 0.572048, 1)
+Label/font_sizes/font_size = 60
+Label/fonts/font = ExtResource("1_d4nwg")
