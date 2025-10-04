@@ -1,13 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://d26xjt2ne2sto"]
+[gd_scene load_steps=7 format=3 uid="uid://d26xjt2ne2sto"]
 
 [ext_resource type="Texture2D" uid="uid://codfmqlgv3l7k" path="res://assets/background.png" id="1_6xdbb"]
 [ext_resource type="Script" uid="uid://bo2c5qkoxkvor" path="res://resources/game.gd" id="1_nqg2l"]
 [ext_resource type="PackedScene" uid="uid://chqctfs45opl6" path="res://resources/ship.tscn" id="1_xyldu"]
 [ext_resource type="PackedScene" uid="uid://bi86ie4yif8ce" path="res://resources/gui.tscn" id="2_d113y"]
+[ext_resource type="Script" uid="uid://5qmjubbjpqp" path="res://resources/game_manager.gd" id="2_p71tq"]
 [ext_resource type="PackedScene" uid="uid://byjr06h487ctf" path="res://resources/random_aesteroid_placer.tscn" id="3_nb8ie"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_nqg2l")
+
+[node name="GameManager" type="Node2D" parent="."]
+script = ExtResource("2_p71tq")
 
 [node name="background" type="TextureRect" parent="."]
 offset_right = 648.0

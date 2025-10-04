@@ -7,6 +7,7 @@
 radius = 25.0
 
 [node name="Ship" type="Area2D" groups=["ship"]]
+z_index = 1
 script = ExtResource("1_ywchf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

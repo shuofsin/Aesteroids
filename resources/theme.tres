@@ -1,8 +1,25 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://m4hgpxspbw5h"]
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://m4hgpxspbw5h"]
 
 [ext_resource type="FontFile" uid="uid://dq6j0mqioajc6" path="res://assets/MedodicaRegular.otf" id="1_d4nwg"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4nwg"]
+bg_color = Color(0, 0.729412, 0.572549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ct1h"]
+bg_color = Color(0.352201, 0.000754979, 0.500089, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.729412, 0.572549, 1)
+
 [resource]
+Button/colors/font_color = Color(0, 0.729412, 0.572549, 1)
+Button/colors/font_hover_color = Color(0.117647, 0, 0.180392, 1)
+Button/font_sizes/font_size = 16
+Button/fonts/font = ExtResource("1_d4nwg")
+Button/styles/hover = SubResource("StyleBoxFlat_d4nwg")
+Button/styles/normal = SubResource("StyleBoxFlat_7ct1h")
 Label/colors/font_color = Color(0, 0.728006, 0.572048, 1)
 Label/font_sizes/font_size = 60
 Label/fonts/font = ExtResource("1_d4nwg")

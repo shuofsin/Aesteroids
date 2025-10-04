@@ -1,3 +1,5 @@
+Node2D
+Button
 Label
 Sprite2D
 Control
@@ -11,4 +13,3 @@ TextureRect
 RichTextLabel
 Container
 Timer
-Node2D

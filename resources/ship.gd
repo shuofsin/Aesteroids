@@ -34,7 +34,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("shoot"): 
 		shoot()
 	
-	if Game.lives <= 0:
+	if Manager.lives <= 0:
 		queue_free()
 
 func shoot() -> void: 

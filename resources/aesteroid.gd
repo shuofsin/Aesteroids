@@ -21,13 +21,11 @@ func _process(delta: float) -> void:
 	position.y = wrapf(position.y, -60, viewport_size.y + 60)
 
 func _on_area_entered(area_that_entered: Area2D) -> void:
-	print("Area Entered")
 	if area_that_entered.is_in_group("ship"):
-		Game.lives -= 1
+		Manager.lives -= 1
 		queue_free()
 	if area_that_entered.is_in_group("bullet"):
 		if scale.x > 1.5 && scale.y > 1.5:
-			print("larger")
 			var aesteroid_obj := preload("res://resources/aesteroid.tscn")
 			var aesteroid_instance_one := aesteroid_obj.instantiate()
 			var aesteroid_instance_two := aesteroid_obj.instantiate()
@@ -44,5 +42,5 @@ func _on_area_entered(area_that_entered: Area2D) -> void:
 			get_parent().add_child(aesteroid_instance_two)
 		area_that_entered.queue_free()
 		queue_free()
-		Game.points += scale.x * 100
+		Manager.points += scale.x * 100
 		

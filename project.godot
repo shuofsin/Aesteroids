@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Game="*res://resources/game.gd"
+Manager="*res://resources/game_manager.gd"
 
 [global_group]
 
