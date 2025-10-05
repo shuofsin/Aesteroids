@@ -1,11 +1,7 @@
-res://resources/gui.tscn
-res://resources/theme.tres
-res://resources/game.tscn
-res://resources/gui.gd
-res://resources/aesteroid.tscn
 res://resources/ship.tscn
+res://resources/theme.tres
 res://resources/bullet.tscn
-res://resources/game.gd
-res://resources/aesteroid.gd
+res://resources/game.tscn
+res://resources/aesteroid.tscn
+res://resources/gui.tscn
 res://resources/ship.gd
-res://resources/game_manager.gd

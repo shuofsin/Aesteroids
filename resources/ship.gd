@@ -1,9 +1,9 @@
 extends Area2D
 
 var speed := 0.0
-var max_speed := 500.0
+var max_speed := 250.0
 var velocity := Vector2(0, 0)
-var steering_factor := 2
+var steering_factor := 1
 var bullet := preload("res://resources/bullet.tscn")
 var direction := Vector2(0, 0)
 @onready var sprite: Sprite2D = $Sprite2D
